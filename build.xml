@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<project name="java2" default="war">
+<target name="war" depends="jar">
+<war needxmlfile="false" destfile="java1.1.war" basedir="app">
+</war>
+</target>
+<target name="jar" depends="compile">
+<jar destfile="app/java1.1.jar" basedir="classfolder"/>
+</target>
+<target name="compile" depends="int">
+<javac srcdir="code" destdir="classfolder"/>
+</target>
+<target name="int" depends="clear">
+<mkdir dir="classfolder"/>
+</target>
+<target name="clear">
+<delete dir="classfolder"/>
+</target>
+</project>
