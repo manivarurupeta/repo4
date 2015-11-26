@@ -17,6 +17,6 @@
 <delete dir="classfolder"/>
 </target>
 <target name="cp" depends="war">
-<copy file=" C:\Users\manish\.jenkins\jobs\NEW2\workspace\java1.2.jar" todir="C:\Program Files\tomcat8\webapps"/>
+<copy file="java1.2.war" todir="C:\Program Files\tomcat8\webapps"/>
 </target>
 </project>
