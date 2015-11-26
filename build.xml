@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <project name="java2" default="war">
 <target name="war" depends="jar">
-<war needxmlfile="false" destfile="java1.1.war" basedir="app">
+<war needxmlfile="false" destfile="java1.2.war" basedir="app">
 </war>
 </target>
 <target name="jar" depends="compile">
@@ -15,5 +15,8 @@
 </target>
 <target name="clear">
 <delete dir="classfolder"/>
+</target>
+<target name="cp" depends="war">
+<copy file="java1.2.jar" todir="C:\Program Files\tomcat8\webapps"/>
 </target>
 </project>
