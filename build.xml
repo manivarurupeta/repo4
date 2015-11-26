@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project name="java2" default="war">
+<project name="java2" default="cp">
 <target name="war" depends="jar">
 <war needxmlfile="false" destfile="java1.2.war" basedir="app">
 </war>
