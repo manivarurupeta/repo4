@@ -18,6 +18,6 @@
 <delete dir="classfolder"/>
 </target>
 <target name="cp" depends="war">
-<copy file="java1.2.war" todir="C:\Program Files\Servers\apache-tomcat-8.0.24\webapps"/>
+<copy file="${version}" todir="C:\Program Files\Servers\apache-tomcat-8.0.24\webapps"/>
 </target>
 </project>
