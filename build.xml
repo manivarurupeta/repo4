@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <project name="java2" default="cp">
+<property name="version" value="java1.1"/>
 <target name="war" depends="jar">
-<war needxmlfile="false" destfile="java1.2.war" basedir="app">
+<war needxmlfile="false" destfile="${version}" basedir="app">
 </war>
 </target>
 <target name="jar" depends="compile">
